@@ -15,90 +15,90 @@ void setup() {
 }
 
 void loop() {
-  ekspresiMelihatKiri();
+  mirarIzquierda();
   delay(1500);
-  mataBerkedip();
+  parpadear();
   delay(150);
-  ekspresiMelihatKanan();
+  mirarDerecha();
   delay(1500);
-  mataBerkedip();
+  parpadear();
   delay(150);
-  ekspresiDatar();
+  plana();
   delay(1500);
-  mataBerkedip();
+  parpadear();
   delay(150);
-  ekspresiMarah();
+  enojado();
   delay(1500);
-  mataBerkedip();
+  parpadear();
   delay(150);
-  ekspresiSedih();
+  triste();
   delay(1500);
-  mataBerkedip();
+  parpadear();
   delay(150);
-  ekspresiSenang();
+  feliz();
   delay(1500);
-  mataBerkedip();
+  parpadear();
   delay(150);
 }
 
-void ekspresiMelihatKiri() {
-  // Melihat ke kiri (kedua mata memenuhi layar dan berada di tengah)
+void mirarIzquierda() {
+  // Mirando hacia la izquierda (ambos ojos llenan la pantalla y están en el centro)
   display.clearDisplay();
-  display.fillRoundRect(0, 0, 50, 32, 8, SSD1306_WHITE); // Mata kiri berada di tengah layar dengan rounded lebih kecil
-  display.fillRoundRect(58, 4, 45, 24, 6, SSD1306_WHITE); // Mata kanan lebih kecil dan posisinya sedikit lebih ke atas
+  display.fillRoundRect(0, 0, 50, 32, 8, SSD1306_WHITE); // El ojo izquierdo está en el centro de la pantalla con una forma redondeada más pequeña.
+  display.fillRoundRect(58, 4, 45, 24, 6, SSD1306_WHITE); // El ojo derecho es más pequeño y está colocado ligeramente más alto.
   display.display();
 }
 
-void ekspresiMelihatKanan() {
-  // Melihat ke kanan (kedua mata memenuhi layar dan berada di tengah)
+void mirarDerecha() {
+  //Mira hacia la derecha (ambos ojos llenan la pantalla y están en el centro)
   display.clearDisplay();
-  display.fillRoundRect(24, 4, 45, 24, 6, SSD1306_WHITE); // Mata kiri lebih kecil dan posisinya sedikit lebih ke atas
-  display.fillRoundRect(76, 0, 50, 32, 8, SSD1306_WHITE); // Mata kanan berada di tengah layar dengan rounded lebih kecil
+  display.fillRoundRect(24, 4, 45, 24, 6, SSD1306_WHITE); // El ojo izquierdo es más pequeño y está colocado ligeramente más alto.
+  display.fillRoundRect(76, 0, 50, 32, 8, SSD1306_WHITE); // El ojo derecho está en el medio de la pantalla con una forma redondeada más pequeña.
   display.display();
 }
 
-void ekspresiDatar() {
-  // Ekspresi Datar (kedua mata memenuhi layar dan berada di tengah)
+void plana() {
+  // Expresión plana (ambos ojos llenan la pantalla y están en el centro)
   display.clearDisplay();
-  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // Mata kiri berada di tengah layar dengan rounded lebih kecil
-  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // Mata kanan berada di tengah layar dengan rounded lebih kecil
+  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // El ojo izquierdo está en el centro de la pantalla con una forma redondeada más pequeña.
+  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // El ojo derecho está en el medio de la pantalla con una forma redondeada más pequeña.
   display.display();
 }
 
-void ekspresiMarah() {
-  // Ekspresi Marah (kedua mata memenuhi layar dan berada di tengah)
+void enojado() {
+  //Expresión de enojo (ambos ojos llenan la pantalla y están en el centro)
   display.clearDisplay();
-  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // Mata kiri berada di tengah dengan rounded lebih kecil
-  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // Mata kanan berada di tengah dengan rounded lebih kecil
-  display.fillTriangle(9, 0, 59, 0, 59, 16, SSD1306_BLACK); // Potongan kiri: kiri atas ke kanan bawah
-  display.fillTriangle(69, 0, 69, 16, 119, 0, SSD1306_BLACK); // Potongan kanan: kanan atas ke kiri bawah
+  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // El ojo izquierdo está en el medio con una forma redondeada más pequeña.
+  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); //El ojo derecho está en el medio con una forma redondeada más pequeña.
+  display.fillTriangle(9, 0, 59, 0, 59, 16, SSD1306_BLACK); // Corte izquierdo: de arriba a izquierda a abajo a derecha
+  display.fillTriangle(69, 0, 69, 16, 119, 0, SSD1306_BLACK); // Corte derecho: de arriba a la derecha a abajo a la izquierda
   display.display();
 }
 
-void ekspresiSedih() {
-  // Ekspresi Sedih (kedua mata memenuhi layar dan berada di tengah)
+void triste() {
+  //Expresión Triste (ambos ojos llenan la pantalla y están centrados)
   display.clearDisplay();
-  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // Mata kiri berada di tengah dengan rounded lebih kecil
-  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // Mata kanan berada di tengah dengan rounded lebih kecil
-  display.fillTriangle(59, 0, 9, 0, 9, 16, SSD1306_BLACK); // Potongan kiri: kanan atas ke kiri bawah
-  display.fillTriangle(69, 0, 119, 16, 119, 0, SSD1306_BLACK); // Potongan kanan: kiri atas ke kanan bawah
+  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // El ojo izquierdo está en el medio con una forma redondeada más pequeña.
+  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // El ojo derecho está en el medio con una forma redondeada más pequeña.
+  display.fillTriangle(59, 0, 9, 0, 9, 16, SSD1306_BLACK); // Corte izquierdo: de arriba a la derecha a abajo a la izquierda
+  display.fillTriangle(69, 0, 119, 16, 119, 0, SSD1306_BLACK); // Corte derecho: de arriba a izquierda a abajo a derecha
   display.display();
 }
 
-void ekspresiSenang() {
-  // Ekspresi Senang (kedua mata memenuhi layar dan berada di tengah)
+void feliz() {
+  // Happy Expression (ambos ojos llenan la pantalla y están centrados)
   display.clearDisplay();
-  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // Mata kiri berada di tengah dengan rounded lebih kecil
-  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // Mata kanan berada di tengah dengan rounded lebih kecil
-  display.fillTriangle(59, 32, 9, 32, 9, 16, SSD1306_BLACK); // Potongan kiri: kanan bawah ke kiri atas
-  display.fillTriangle(69, 32, 119, 32, 119, 16, SSD1306_BLACK); // Potongan kanan: kiri bawah ke kanan atas
+  display.fillRoundRect(9, 0, 50, 32, 8, SSD1306_WHITE); // El ojo izquierdo está en el medio con una forma redondeada más pequeña.
+  display.fillRoundRect(69, 0, 50, 32, 8, SSD1306_WHITE); // El ojo derecho está en el medio con una forma redondeada más pequeña.
+  display.fillTriangle(59, 32, 9, 32, 9, 16, SSD1306_BLACK); //Corte izquierdo: de abajo derecha a arriba izquierda
+  display.fillTriangle(69, 32, 119, 32, 119, 16, SSD1306_BLACK); // Corte derecho: de abajo izquierda a arriba derecha
   display.display();
 }
 
-void mataBerkedip() {
-  // Mata Berkedip (kedua mata tertutup memenuhi layar dan berada di tengah)
+void parpadear() {
+  // Ojos parpadeantes (ambos ojos cerrados llenan la pantalla y están centrados)
   display.clearDisplay();
-  display.fillRoundRect(9, 14, 50, 4, 2, SSD1306_WHITE); // Mata kiri tertutup
-  display.fillRoundRect(69, 14, 50, 4, 2, SSD1306_WHITE); // Mata kanan tertutup
+  display.fillRoundRect(9, 14, 50, 4, 2, SSD1306_WHITE); // Ojo izquierdo cerrado
+  display.fillRoundRect(69, 14, 50, 4, 2, SSD1306_WHITE); // Ojo derecho cerrado
   display.display();
 }
